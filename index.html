@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="titulo">
+        <h1>Calculadora</h1>
+    </div>
+
+    <div class="container">
+        <div id="text-number">
+            <input id="operation" type="text" pattern="([\+,\-]{1})?[0-9]([\.][0-9]+)?">
+            <input id="result" type="text" pattern="([\+,\-]{1})?[0-9]([\.][0-9]+)?">
+        </div>
+
+        <div id="keys">
+            <button>CE</button>
+            <button>C</button>
+            <button>Borrar</button>
+            <button id="btn-dividir">/</button>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button id="btn-multiplicar">x</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button id="btn-restar">-</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button id="btn-sumar">+</button>
+
+            <button>+/-</button>
+            <button>0</button>
+            <button>.</button>
+            <button id="btn-igual" value="=">=</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

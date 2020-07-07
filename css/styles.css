@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "TrebuchetMS";
+  src: url(fonts/TrebuchetMS.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+#titulo {
+  text-align: center;
+}
+
+.container {
+  width: 30%;
+  height: 600px;
+  background-color: #ece9e9;
+  border: 1px solid #130808;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+.container #text-number {
+  width: 100%;
+}
+.container #text-number input {
+  display: block;
+  border: none;
+  border-radius: 2px;
+  text-align: right;
+  padding-right: 15px;
+  font-size: 15px;
+}
+.container input[type=text]::-webkit-inner-spin-button,
+.container input[type=text]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.container #text-number > input:first-child {
+  width: 90%;
+  height: 35px;
+}
+.container #text-number > input:last-child {
+  width: 90%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container #keys {
+  display: block;
+  margin: 0px auto;
+  margin-left: 10px;
+  width: 100%;
+  height: 80%;
+  /*button[value="="] {
+      background-color: #8ABAE0;
+  }*/
+  /*button[value="="]:hover {
+      background-color: #4599DB;
+  }*/
+}
+.container #keys button {
+  width: 23%;
+  height: 20%;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-family: "TrebuchetMS";
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.container #keys button:hover {
+  background-color: #D7D7D7;
+}
+.container #keys #btn-sumar {
+  background: linear-gradient(45deg, #538d58 10%, #6bcf74 90%);
+}
+.container #keys #btn-restar {
+  background: linear-gradient(45deg, #538d58 10%, #6bcf74 90%);
+}
+.container #keys #btn-multiplicar {
+  background: linear-gradient(45deg, #538d58 10%, #6bcf74 90%);
+}
+.container #keys #btn-dividir {
+  background: linear-gradient(45deg, #538d58 10%, #65b66c 90%);
+}
+.container #keys #btn-igual {
+  background: linear-gradient(45deg, #8ABAE0 10%, #4599DB 90%);
+  color: white;
+}
+@keyframes bruh {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.container #keys #btn-sumar, .container #keys #btn-restar, .container #keys #btn-multiplicar, .container #keys #btn-dividir, .container #keys #btn-igual {
+  /* reset */
+  -webkit-appearance: none;
+  border: 0;
+  /* styles */
+  background-size: 200% 100%;
+  padding: 15px 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.container #keys #btn-sumar:hover, .container #keys #btn-restar:hover, .container #keys #btn-multiplicar:hover, .container #keys #btn-dividir:hover, .container #keys #btn-igual:hover {
+  animation: bruh 1s linear infinite;
+}
+
+/*# sourceMappingURL=styles.css.map */

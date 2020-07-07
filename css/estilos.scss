@@ -1,0 +1,150 @@
+$base-color: rgb(236, 233, 233);
+$font-default: "TrebuchetMS";
+
+@font-face {
+    font-family: "TrebuchetMS";
+    src: url(fonts/TrebuchetMS.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#titulo {
+    text-align: center;
+}
+
+.container {
+    width: 30%;
+    height: 600px;
+    background-color: $base-color;
+    border: 1px solid rgb(19, 8, 8);
+    border-radius: 10px;
+    padding-top: 10px;
+
+    #text-number {
+        width: 100%;
+
+        input {
+            display: block;
+            border: none;
+            border-radius: 2px;
+            text-align: right;
+            padding-right: 15px;
+            font-size: 15px;
+        }
+    }
+
+    input[type=text]::-webkit-inner-spin-button, 
+    input[type=text]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+    }
+
+    #text-number > input:first-child {
+        width: 90%;
+        height: 35px;
+    }
+
+    #text-number > input:last-child {
+        width: 90%;
+        height: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    #keys {
+        display: block;
+        margin: 0px auto;
+        margin-left: 10px;
+        width: 100%;
+        height: 80%;
+
+        button {
+            width: 23%;
+            height: 20%;
+            margin-bottom: 5px;
+            font-size: 25px;
+            font-family: $font-default;
+            text-align: center;
+            background-color: white;
+            border: 1px solid #ccc;
+            outline: none;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        /*button[value="="] {
+            background-color: #8ABAE0;
+        }*/
+
+        button:hover {
+            background-color: #D7D7D7;
+        }
+
+        /*button[value="="]:hover {
+            background-color: #4599DB;
+        }*/
+        #btn-sumar {
+            background: linear-gradient(45deg, rgb(83, 141, 88) 10%, rgb(107, 207, 116) 90%);
+            @extend %btn-operators;
+        }
+
+        #btn-restar {
+            background: linear-gradient(45deg, rgb(83, 141, 88) 10%, rgb(107, 207, 116) 90%);
+            @extend %btn-operators;
+        }
+
+        #btn-multiplicar {
+            background: linear-gradient(45deg, rgb(83, 141, 88) 10%, rgb(107, 207, 116) 90%);
+            @extend %btn-operators;
+        }
+
+        #btn-dividir {
+            background: linear-gradient(45deg, rgb(83, 141, 88) 10%, rgb(101, 182, 108) 90%);
+            @extend %btn-operators;
+        }
+
+        #btn-igual {
+            background: linear-gradient(45deg, #8ABAE0 10%, #4599DB 90%);
+            color: white;
+            @extend %btn-operators;
+        }
+
+        @keyframes bruh {
+            0% {
+                background-position: 0 0;
+            }
+        
+            50% {
+                background-position: 100% 0;
+            }
+        
+            100% {
+                background-position: 0 0;
+            }
+        }
+    }
+}
+
+%btn-operators {
+    /* reset */
+    -webkit-appearance: none;
+    border: 0;
+    /* styles */
+    background-size: 200% 100%;
+    padding: 15px 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    
+    &:hover {
+        animation: bruh 1s linear infinite;
+    }
+}
+
+        

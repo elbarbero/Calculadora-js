@@ -15,15 +15,21 @@ $font-default: "TrebuchetMS";
 
 #titulo {
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .container {
-    width: 30%;
-    height: 600px;
+    display: flex;
+    width: 40%;
     background-color: $base-color;
     border: 1px solid rgb(19, 8, 8);
     border-radius: 10px;
     padding-top: 10px;
+    flex-flow: row wrap;
 
     #text-number {
         width: 100%;
@@ -79,17 +85,10 @@ $font-default: "TrebuchetMS";
             cursor: pointer;
         }
 
-        /*button[value="="] {
-            background-color: #8ABAE0;
-        }*/
-
         button:hover {
             background-color: #D7D7D7;
         }
 
-        /*button[value="="]:hover {
-            background-color: #4599DB;
-        }*/
         #btn-sumar {
             background: linear-gradient(45deg, rgb(83, 141, 88) 10%, rgb(107, 207, 116) 90%);
             @extend %btn-operators;

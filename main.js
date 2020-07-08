@@ -21,7 +21,6 @@ const operations = (event) => {
             result = (result === 0) ? pressedNumber : realizeOperations(pressedSign);
             break;
         case '+/-':
-            //viewOperations.value = (viewOperations.value.startsWith('-')) ? viewOperations.value.slice(1, viewOperations.value.length) : '-' + viewOperations.value;
             if (viewResult.value.startsWith('-')) {
                 viewResult.value = viewResult.value.slice(1, viewResult.value.length);
             } else {
@@ -55,8 +54,6 @@ const operations = (event) => {
 }
 
 const realizeOperations = (sign) => {
-    console.log(pressedNumber);
-    console.log(sign);
     switch (sign) {
         case '+':
             result += pressedNumber;
@@ -88,7 +85,6 @@ for (let i = 0; i < buttons.length; i++) {
                 if (viewResult.value.split(".").length > 2) {
                     viewResult.value = viewResult.value.slice(0, -1);
                 }
-                //console.log(typeof viewResult.value);
                 if (viewResult.value.startsWith('.')) { // si ha introducido un punto antes que un numero
                     viewResult.value = '0'.concat(viewResult.value);
                 }

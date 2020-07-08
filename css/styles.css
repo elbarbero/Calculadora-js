@@ -11,15 +11,21 @@
 
 #titulo {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .container {
-  width: 30%;
-  height: 600px;
+  display: flex;
+  width: 40%;
   background-color: #ece9e9;
   border: 1px solid #130808;
   border-radius: 10px;
   padding-top: 10px;
+  flex-flow: row wrap;
 }
 .container #text-number {
   width: 100%;
@@ -54,12 +60,6 @@
   margin-left: 10px;
   width: 100%;
   height: 80%;
-  /*button[value="="] {
-      background-color: #8ABAE0;
-  }*/
-  /*button[value="="]:hover {
-      background-color: #4599DB;
-  }*/
 }
 .container #keys button {
   width: 23%;
